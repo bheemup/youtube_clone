@@ -1,0 +1,112 @@
+.playvideo_container{
+display: flex;
+width: 85%;
+margin: auto;
+padding-top: 60px;
+overflow: hidden;
+
+object-fit: contain;
+}
+
+
+
+.related_videos{
+
+width: 100%;
+margin-left: 25px;
+height: 550px;
+border-radius: 15px;
+overflow: scroll;
+overflow-x: hidden;
+
+}
+.video_details{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  padding: 5px;
+ 
+}
+.video_details header{
+    font-size: 22px;
+   color: black;
+
+}
+.like_row{
+    display: flex;
+  
+    padding: 2px;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.channel_nameV{
+   
+  margin-left: 10px;
+  opacity: 0.8;
+}
+.channel_imgV{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.subscribe_btn{
+    height: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-right: 40px;
+ 
+    
+}
+.like_btn,.dislike_btn{
+    height: 22px;
+    margin-left: 20px;
+    background-color: gray;
+}
+.like_btn{
+    margin-left: 90px;
+}
+.share{
+    margin-left: 50px;
+    font-size: 18px;
+}
+.dots{
+    font-size: 30px;
+    margin-left: 40px;
+    height: 30px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    padding-bottom:55px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+.video_div{
+    cursor: pointer;
+    padding: 2px;
+    display: flex;
+}
+.video_div img{
+    height: 100px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.second_part{
+    margin-left: 5px;
+    padding: 5px;
+}
+.second_part p:nth-child(1){
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.second_part p:nth-child(2){
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0.7;
+}

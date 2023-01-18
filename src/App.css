@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.con{
+    display: flex;
+ 
+}
+
+
+.left{
+  
+    height: 600px;
+    width: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    margin-top: 58px;
+  
+}
+.left::-webkit-scrollbar{
+    display: none;
+}
+.left div{
+    display: flex;
+    position: relative;
+    width: 90%;
+   align-items: center;
+    border-radius: 10px;
+    height: 7%;
+    padding-left: 25px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.left div:hover
+{
+    background-color: rgb(236, 234, 234);
+}
+
+.left div p{
+    margin-left: 16px;
+}
+.left img{
+    height: 17px;
+}
+.right{
+     margin-left: 250px;
+     margin-top: 115px;
+     width: 80%;
+     background-color: rgb(250, 246, 246);
+     display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.filters{
+    width: 79.25%;
+    display: flex;
+    position: fixed;
+    margin-left: 250px;
+   margin-top: 52px;
+
+   padding: 5px;
+   background-color: white;
+   overflow: scroll;
+   overflow-y: hidden;
+   padding-left: 20px;
+   padding-right: 20px;
+   width: 77%;
+}
+.filters::-webkit-scrollbar{
+    display: none;
+}
+.slider{
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.slider:hover{
+    background-color: rgb(206, 199, 199);
+
+}
+.filter_option{
+   
+   font-family: sans-serif;
+   padding: 5px 10px;
+   border-radius: 10px;
+   border: none;
+   font-size: 16px;
+   margin-left: 20px;
+   cursor: pointer;
+   text-align: center;
+   align-items: center;
+
+}
+.filter_option:hover{
+    background-color: rgb(129, 125, 125);
+    color: white;
+}
