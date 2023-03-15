@@ -6,14 +6,14 @@
 
 .con{
     display: flex;
- 
+   
 }
 
 
 .left{
   
     height: 600px;
-    width: 250px;
+    width: 240px;
     overflow: scroll;
     overflow-x: hidden;
     position: fixed;
@@ -29,7 +29,7 @@
     width: 90%;
    align-items: center;
     border-radius: 10px;
-    height: 7%;
+    height: 6%;
     padding-left: 25px;
     margin-top: 3px;
     cursor: pointer;
@@ -41,6 +41,7 @@
 
 .left div p{
     margin-left: 16px;
+    font-size: 14px;
 }
 .left img{
     height: 17px;
@@ -49,11 +50,11 @@
      margin-left: 250px;
      margin-top: 115px;
      width: 80%;
-     background-color: rgb(250, 246, 246);
      display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 5px;
+    padding: 10px;
 }
 .filters{
     width: 79.25%;
@@ -61,7 +62,7 @@
     position: fixed;
     margin-left: 250px;
    margin-top: 52px;
-
+   z-index: 1;
    padding: 5px;
    background-color: white;
    overflow: scroll;
@@ -86,12 +87,11 @@
 
 }
 .filter_option{
-   
    font-family: sans-serif;
    padding: 5px 10px;
    border-radius: 10px;
    border: none;
-   font-size: 16px;
+   font-size: 15px;
    margin-left: 20px;
    cursor: pointer;
    text-align: center;
@@ -101,4 +101,18 @@
 .filter_option:hover{
     background-color: rgb(129, 125, 125);
     color: white;
+}
+@media only screen and (max-width:768px){
+    .right{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0px;
+        width: 100%;
+    }
+    .left{
+        display: none;
+    }
+    .filters{
+        margin-left: 0px;
+        width: 100%;
+    }
 }

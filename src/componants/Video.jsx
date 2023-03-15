@@ -34,7 +34,7 @@ function Video({thumbnail,description,channel_name,channel_img,video}) {
         <img src={channel_img} alt="channel_logo" />
         <p className='description'>
          {
-            cutter(description,50)
+            cutter(description,40)
          }
         </p>
         

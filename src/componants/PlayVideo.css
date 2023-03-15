@@ -1,6 +1,6 @@
 .playvideo_container{
 display: flex;
-width: 85%;
+width: 99%;
 margin: auto;
 padding-top: 60px;
 overflow: hidden;
@@ -9,12 +9,11 @@ object-fit: contain;
 }
 
 
-
 .related_videos{
 
 width: 100%;
 margin-left: 25px;
-height: 550px;
+height: 88vh;
 border-radius: 15px;
 overflow: scroll;
 overflow-x: hidden;
@@ -103,10 +102,63 @@ overflow-x: hidden;
 }
 .second_part p:nth-child(1){
     font-size: 17px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Times, serif;
 }
 .second_part p:nth-child(2){
     font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Times, serif;
     opacity: 0.7;
+}
+@media only screen and (max-width:480px) {
+    .playvideo_container{
+     display: block;
+     width: 99%;
+    }
+   
+    .video_details header{
+        font-size: medium;
+    }
+   .play_video{
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    }
+    .second_part{
+        width: 55%;
+    }
+    .video{
+        height: 255px;
+    }
+    .play_video iframe{
+      width: 100%;
+    }
+   .like_row{
+   display: flex;
+   justify-content: space-around;
+   }
+   .dislike_btn{
+    margin-left: 10px;
+   }
+   .channel_nameV{
+    font-size: 14px;
+    
+   }
+   .like_btn{
+    margin-left: 0;
+    font-size: px;
+   }
+   .subscribe_btn{
+    font-size: 12px;
+    padding: 1px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+   }
+   .share{
+    margin-left: 10px;
+    font-size: 14px;
+   }
+   .dots{
+    margin-left: 0;
+    background-color: white;
+   }
 }

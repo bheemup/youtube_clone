@@ -8,10 +8,16 @@
   padding: 8px;
   padding-right: 40px;
   padding-left: 40px;
+z-index: 1;
 }
-
+.list_icon{
+    display: flex;
+    flex-direction: column;
+    height: 17px;
+    padding: 1px;
+}
 .list_icon span{
-     height: 1px;
+     height: 0.9px;
      width: 20px;
      background-color: black;
      display: block;
@@ -26,8 +32,9 @@
     align-items: center;
 }
 .first_section img{
-    height: 35px;
+    height: 28px;
     cursor: pointer;
+    background-color: white;
 
 }
 .search_button{
@@ -58,7 +65,7 @@
     margin-left: 20px;
 }
 .second_section img{
-    height: 20px;
+    height: 19px;
     border-radius: 50%;
     background-color: white;
 }
@@ -74,7 +81,8 @@
   
 }
 .third_section img{
-    height: 20px;
+    margin: auto;
+    height: 17px;
 }
 .user_icon img{
     border-radius: 50%;
@@ -85,4 +93,32 @@
     display: flex;
     width: 200px;
     justify-content: space-around;
+}
+@media only screen and (max-width:768px){
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+   .speak, .second_section input{
+        display: none;
+    }
+    .search_button{
+        border: none;
+        background-color: white;
+        padding-left: 80%;
+    }
+    .third_section{
+       width: 380px;
+    }
+    .video_casting{
+        display: none;
+    }
+    .first_section img{
+        margin-left: 10px;
+        text-align: center;
+        margin-top: -5px;
+    }
+    .user_icon{
+        margin-right: 25%;
+    }
 }

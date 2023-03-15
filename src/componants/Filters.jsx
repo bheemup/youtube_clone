@@ -13,10 +13,10 @@ function Filters() {
               <button className="filter_option">Computer</button>
               <button className="filter_option">CSS</button>
               <button className="filter_option">HTML</button>
-              <button className="filter_option">HTML</button>
-              <button className="filter_option">HTML</button>
-              <button className="filter_option">HTML</button>
-              <button className="filter_option">HTML</button>
+              <button className="filter_option">Bollywood</button>
+              <button className="filter_option">Songs</button>
+              <button className="filter_option">Music</button>
+              <button className="filter_option">Melody</button>
               <button className="filter_option">More</button>
               <button className="slider">{">"}</button>
            </div>
